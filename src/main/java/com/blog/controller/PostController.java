@@ -25,6 +25,13 @@ public class PostController {
     private PostService postService;
 
     //http://localhost:8080/api/posts
+    @GetMapping
+    public String tes(){
+        return "hello";
+    }
+
+
+    //http://localhost:8080/api/posts
     //@PreAuthorize("hasRole('ADMIN')")
     @PostMapping
     public ResponseEntity<?> createPost (@Valid @RequestBody PostDto postDto, BindingResult result){
