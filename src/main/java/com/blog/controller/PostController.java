@@ -25,7 +25,7 @@ public class PostController {
     private PostService postService;
 
     //http://localhost:8080/api/posts
-    @GetMapping
+    @GetMapping("/a")
     public String tes(){
         return "hello";
     }
