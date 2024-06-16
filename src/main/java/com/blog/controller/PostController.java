@@ -51,7 +51,7 @@ public class PostController {
             @RequestParam(value = "pageNO", defaultValue = "0", required = false) int pageNo,
             @RequestParam(value = "pageSize", defaultValue = "10" , required = false) int pageSize,
             @RequestParam(value = "sortBy", defaultValue = "id" , required = false) String sortBy,
-            @RequestParam(value = "sortBy", defaultValue = "id" , required = false) String sortDir
+            @RequestParam(value = "orderBy", defaultValue = "id" , required = false) String sortDir
     ){
         List<PostDto> postDtos = postService.listAllPosts(pageNo,pageSize,sortBy,sortDir);
 
